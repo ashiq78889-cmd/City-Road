@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>City Rush 3D</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="hud">
+    <div>🪙 <span id="coins">0</span></div>
+    <div>🏆 <span id="score">0</span></div>
+    <div>⚡ <span id="speed">1</span>x</div>
+  </div>
+
+  <div id="startScreen">
+    <h1>🏙️ CITY RUSH 3D</h1>
+    <p>Swipe left & right to move</p>
+    <button id="startButton">START RUN</button>
+  </div>
+
+  <div id="gameOver" class="hidden">
+    <h1>GAME OVER</h1>
+    <p>Score: <span id="finalScore">0</span></p>
+    <p>Coins: <span id="finalCoins">0</span></p>
+    <button id="restartButton">RUN AGAIN</button>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <script type="module" src="game.js"></script>
+
+</body>
+</html>
